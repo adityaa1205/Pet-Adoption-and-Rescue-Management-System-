@@ -10,8 +10,10 @@ The primary goal of this platform is to simplify the process of reuniting lost p
 
 Here is a look at the application's interface.
 
-### Homepage
-![Application Homepage](./screenshot/Homepage.png)
+### Main Interface
+| Homepage | Chatbot |
+| :---: | :---: |
+| ![Application Homepage](./screenshot/Homepage.png) | ![Application Chatbot](./screenshot/Chat-bot.png) |
 
 ### Dashboards
 | User Dashboard | Admin Dashboard |
@@ -60,8 +62,7 @@ Make sure you have the following installed on your machine:
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/adityakumar-09/pet-rescue.git](https://github.com/adityakumar-09/pet-rescue.git)
-    cd pet-rescue
+    git clone https://github.com/adityakumar-09/pet-rescue.git
     ```
 
 2.  **Backend Setup:**
