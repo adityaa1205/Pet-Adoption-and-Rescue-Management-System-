@@ -8,15 +8,15 @@ The primary goal of this platform is to simplify the process of reuniting lost p
 
 ## 📸 Screenshots
 
-*(You can add the screenshots from your report here for a visual overview)*
+Here is a look at the application's interface.
 
-| User Dashboard | Pet Details Page |
-| :---: | :---: |
-| *Img 6.1 User Dashboard* | *Img 6.2 Pet Details* |
+### Homepage
+![Application Homepage](./screenshot/Homepage.png)
 
-| Lost Pets Page | Admin Dashboard |
+### Dashboards
+| User Dashboard | Admin Dashboard |
 | :---: | :---: |
-| *img 6.4 Lost Pets Page* | *img 6.7 Lost + Found + Adopt Requests for Admin* |
+| ![User Dashboard](./screenshot/User-Dashboard.png) | ![Admin Dashboard](./screenshot/Admin-Dashboard.png) |
 
 ---
 
