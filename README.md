@@ -13,7 +13,7 @@ Here is a look at the application's interface.
 ### Main Interface
 | Homepage | Chatbot |
 | :---: | :---: |
-| ![Application Homepage](./screenshot/Homepage.png) | ![Application Chatbot](./screenshot/Chat-bot.png) |
+| ![Application Homepage](./screenshot/Homepage.png) | ![Application Chatbot](./screenshot/Chat-Bot.png) |
 
 ### Dashboards
 | User Dashboard | Admin Dashboard |
