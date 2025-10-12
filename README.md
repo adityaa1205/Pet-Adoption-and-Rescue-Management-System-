@@ -28,6 +28,7 @@ The platform is built with the following core modules and features:
 
 * **👤 User Management:** Includes secure user registration and login modules to manage user profiles and authenticate requests.
 * **📝 Pet Reporting:** Allows users to submit detailed reports for lost or found pets, including type, breed, color, location, and photos.
+* **💬 Chatbot Support:** An interactive chatbot to answer user queries, address pet-related doubts, and provide suggestions.
 * **🛠️ Admin Dashboard:** Provides administrators with a dashboard to view, verify, and update the status of pet reports (e.g., "Accepted," "Rejected," "Pending") to effectively connect finders with owners.
 * **🔍 Pet Status Inquiry and Search:** A robust search feature allows users to check if their missing pet is listed in the system.
 * **🔔 Notifications:** An integrated notification system provides timely updates to both users and administrators regarding the status of their requests.
@@ -72,7 +73,7 @@ Make sure you have the following installed on your machine:
 
     # Create and activate a virtual environment
     python -m venv venv
-    source venv/bin/activate  # On Windows use: venv\Scripts\activate
+    venv/Scripts/activate
 
     # Install the required Python packages
     pip install -r requirements.txt
@@ -89,16 +90,35 @@ Make sure you have the following installed on your machine:
 
 4.  **Environment Variables & Database:**
     * Set up a PostgreSQL database for the project.
-    * Create a `.env` file in the `backend` directory. Add your database connection URL, secret key, and other environment variables.
+    * Create a `.env` file in the `/backend/pet_rescue_pro` directory. Add your database connection URL, secret key, and other environment variables.
         ```ini
-        # Example .env file in /backend
-        SECRET_KEY='your-strong-secret-key'
+        # Example .env file in /backend/pet_rescue_pro
+        # Django secret key
+        SECRET_KEY=<secret key>
+
+        # Debug mode (set False in production)
         DEBUG=True
-        DATABASE_URL='postgres://USER:PASSWORD@HOST:PORT/DATABASE_NAME'
+
+        # Allowed hosts
+        ALLOWED_HOSTS=127.0.0.1,localhost
+
+        # Database settings
+        DB_NAME=<database name>
+        DB_USER=<username>
+        DB_PASSWORD=<password>
+        DB_HOST=localhost
+        DB_PORT=5432
+
+        # Gmail SMTP settings
+        EMAIL_HOST_USER=<email for SMTP>
+        EMAIL_HOST_PASSWORD=<password>
+
+
+        GOOGLE_API_KEY=<google api key>
         ```
 
 5.  **Run the Application:**
-    * **Start the Backend Server** (from the `/backend` directory):
+    * **Start the Backend Server** (from the `/backend/pet_rescue_pro` directory):
         ```sh
         # Apply database migrations
         python manage.py migrate
@@ -108,7 +128,7 @@ Make sure you have the following installed on your machine:
         ```
     * **Start the Frontend Development Server** (from the `/frontend` directory in a new terminal):
         ```sh
-        npm start
+        npm run dev
         ```
     Your application should now be running locally!
 
