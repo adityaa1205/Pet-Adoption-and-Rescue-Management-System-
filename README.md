@@ -143,6 +143,7 @@ This project was a collaborative effort by the members of Batch 01.
 * Mere Venkat Gopi Krishna
 * Arvind Puvvada
 * Divyanshu Ranjan
+* Paidi Harika
 * Sadagopan T
 * Sindhu Narahari
 * Harsh Mandloi
