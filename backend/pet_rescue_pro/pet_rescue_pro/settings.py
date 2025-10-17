@@ -3,6 +3,8 @@ import os
 from dotenv import load_dotenv
 import google.generativeai as genai
 from datetime import timedelta
+import dj_database_url
+
 
 # Base directory
 BASE_DIR = Path(__file__).resolve().parent.parent
